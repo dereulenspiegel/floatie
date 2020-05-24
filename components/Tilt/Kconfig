@@ -1,0 +1,12 @@
+menu "Tilt component"
+  config TILT_MEDIANROUNDSMAX
+    prompt "Max amount of median rounds for accel measurement"
+    int
+    default 10
+
+  config TILT_MEDIANAVGCOUNT
+    prompt "Number of median samples to caclulate average tilt from"
+    int
+    default 6
+
+endmenu
